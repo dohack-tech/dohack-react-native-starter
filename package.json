@@ -3,10 +3,19 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "MY_ENVIRONMENT=dev expo start -c",
+    "start:dev-client": "MY_ENVIRONMENT=dev expo start --dev-client -c",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build:fetch-config": "node lib/build-fetch-config.js",
+    "build:dev:android": "eas build --profile development --platform android --local",
+    "build:qa:android": "eas build --profile preview --platform android --local",
+    "build:dev:ios": "eas build --profile development-simulator --platform ios --local",
+    "build:prod:ios": "eas build --profile production --platform ios --local",
+    "build:eas:dev:android": "eas build --profile development --platform android",
+    "build:eas:qa:android": "eas build --profile preview --platform android",
+    "build:eas:dev:ios": "eas build --profile development-simulator --platform ios"
   },
   "dependencies": {
     "expo": "~49.0.6",
@@ -15,7 +24,9 @@
     "react-native": "0.72.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21"
   },
   "private": true
 }
