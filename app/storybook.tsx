@@ -8,7 +8,7 @@ function StorybookRedirect() {
 let AppEntryPoint = StorybookRedirect;
 
 if (Constants.expoConfig.extra.storybookEnabled === "true") {
-  AppEntryPoint = require('../.storybook').default;
+  AppEntryPoint = require("../.storybook").default;
 }
 
 export default AppEntryPoint;

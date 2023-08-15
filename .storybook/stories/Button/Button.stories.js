@@ -1,19 +1,19 @@
-import React from 'react';
-import { View } from 'react-native';
-import { MyButton } from './Button';
+import React from "react";
+import { View } from "react-native";
+import { MyButton } from "./Button";
 
 const MyButtonMeta = {
-  title: 'MyButton',
+  title: "MyButton",
   component: MyButton,
   argTypes: {
-    onPress: { action: 'pressed the button' },
+    onPress: { action: "pressed the button" },
   },
   args: {
-    text: 'Hello world',
+    text: "Hello world",
   },
   decorators: [
     (Story) => (
-      <View style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}>
+      <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
         <Story />
       </View>
     ),
@@ -26,6 +26,6 @@ export const Basic = {};
 
 export const AnotherExample = {
   args: {
-    text: 'Another example',
+    text: "Another example",
   },
 };

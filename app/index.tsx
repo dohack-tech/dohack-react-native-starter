@@ -1,6 +1,6 @@
+import Constants from "expo-constants";
 import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import Constants from "expo-constants";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {

@@ -1,4 +1,4 @@
-# DoHack React Native  Starter
+# DoHack React Native Starter
 
 ## E2E
 

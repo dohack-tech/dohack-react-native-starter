@@ -9,6 +9,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "lint-fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "build:fetch-config": "node lib/build-fetch-config.js",
     "build:dev:android": "eas build --profile development --platform android --local",
     "build:qa:android": "eas build --profile preview --platform android --local",
@@ -18,7 +20,8 @@
     "build:eas:qa:android": "eas build --profile preview --platform android",
     "build:eas:dev:ios": "eas build --profile development-simulator --platform ios",
     "storybook-generate": "sb-rn-get-stories",
-    "storybook-watch": "sb-rn-watcher"
+    "storybook-watch": "sb-rn-watcher",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/react": "~18.2.14",
@@ -45,9 +48,21 @@
     "@storybook/react-native": "^6.5.6",
     "babel-loader": "^8.3.0",
     "dotenv": "^16.3.1",
+    "eslint": "^8.47.0",
+    "eslint-config-universe": "^11.3.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "lodash": "^4.17.21",
+    "prettier": "3.0.2",
     "react-dom": "^18.2.0",
     "react-native-safe-area-context": "^4.7.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ]
   },
   "private": true
 }
