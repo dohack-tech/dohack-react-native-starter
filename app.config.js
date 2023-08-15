@@ -24,6 +24,7 @@ module.exports = ({ config }) => {
     extra: {
       env:
         process.env.MY_ENVIRONMENT === "dev" ? "DEV" : process.env.APP_VARIANT,
+      storybookEnabled: process.env.STORYBOOK_ENABLED,
     },
   });
 
