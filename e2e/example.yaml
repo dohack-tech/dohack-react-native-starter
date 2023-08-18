@@ -1,3 +1,4 @@
-appId: com.example.app
+appId: com.dohack.starter.qa
 ---
-- openLink: exp:/192.168.1.18:8081
+- launchApp
+- assertVisible: "DoHack React Native Starter"
