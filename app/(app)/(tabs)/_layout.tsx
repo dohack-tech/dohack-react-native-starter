@@ -10,7 +10,7 @@ import theme from "../../../components/theme";
 
 const TAB_ICON_PROPS = { width: 32, height: 32 };
 const PADDING_BOTTOM = 10;
-const PADDING_TOP = 30;
+const PADDING_TOP = 10;
 
 export default function TabsLayout() {
   const { t } = useTranslation();
