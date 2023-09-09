@@ -42,8 +42,8 @@ export default function TextInput({
 
 export interface FormTextInputProps extends TextInputProps {
   name: string;
-  control: any; // ComponentProps<typeof Controller>["control"];
-  rules?: any; // ComponentProps<typeof Controller>["rules"];
+  control: ComponentProps<typeof Controller>["control"];
+  rules?: ComponentProps<typeof Controller>["rules"];
 }
 
 export function FormTextInput({
