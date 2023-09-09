@@ -40,5 +40,15 @@ module.exports = ({ config }) => {
     });
   }
 
+  if (process.env.PROJECT_ID) {
+    newConfig = _merge(newConfig, {
+      extra: {
+        eas: {
+          projectId: process.env.PROJECT_ID,
+        },
+      },
+    });
+  }
+
   return newConfig;
 };

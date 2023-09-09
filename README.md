@@ -1,4 +1,4 @@
-# DOHACK React Native Starter
+# DoHack React Native Starter
 
 ## Development
 
