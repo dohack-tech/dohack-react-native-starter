@@ -1,4 +1,10 @@
-appId: com.dohack.starter.qa
+appId: com.dohack.starter.dev
 ---
 - launchApp
-- assertVisible: "DoHack React Native Starter"
+- tapOn: "ejemplo@mail.com"
+- "inputRandomEmail"
+- "hideKeyboard"
+- tapOn:
+    text: "INICIAR SESIÓN"
+    index: 1
+- assertVisible: ".*Hola apollo.*"

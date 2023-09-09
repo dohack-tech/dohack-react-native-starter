@@ -1,0 +1,9 @@
+{
+  "Hola": "¡Hola {{name}}!",
+  "minCharacters_one": "Mínimo 1 caracter",
+  "minCharacters_other": "Mínimo {{count}} caracteres",
+  "maxCharacters_one": "Máximo 1 caracter",
+  "maxCharacters_other": "Máximo {{count}} caracteres",
+  "exactCharacters_one": "Debe ser 1 caracter",
+  "exactCharacters_other": "Deben ser {{count}} caracteres"
+}
